@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<templates xml:space="preserve">
+
+    <t t-name="owl_playground.TodoList" owl="1">
+        <div class="p-3">
+            owl todolist
+            <br/><br/>
+            <div>
+                <center><input type="text" t-ref="input" class="form-control" style="width:13%;" placeholder="ADD TODO" t-on-keyup="addTodo"></center>
+                <p t-foreach="todolist" t-as="todo" t-key="todo.id">
+                    <Todo id="todo.id" description="todo.description" done="todo.done" toggleState.bind="toggleState" removeTodo.bind="removeTodo"/>
+                </p>
+            </div>
+        </div>
+    </t>
+</templates>
+
+<!-- <templates xml:space="preserve">
+    <t t-name="owl_playground.TodoList" owl="1">
+        <div class="bg-white border border-primary rounded mt-2 p-2">
+            <input class="form-control mb-3" type="text" placeholder="Add a todo" t-on-keyup="addTodo" t-ref="todoListInput"/>
+            <p t-foreach="todoList" t-as="todo" t-key="todo.id">
+                <Todo id="todo.id" description="todo.description" done="todo.done"/>
+            </p>
+        </div>
+    </t>
+</templates> -->

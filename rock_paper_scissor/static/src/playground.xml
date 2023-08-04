@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="rock_paper_scissor.playground" owl="1">
+    <div class="column1">
+            Hi there!👋  Welcome to Rock Paper Scissor Game.<br/><br/>
+
+            <Player></Player>
+            <!-- <Result></Result> -->
+    </div>        
+  
+    </t>
+</templates>

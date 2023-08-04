@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+          <template id="rock_paper_scissor.playground" name="Rock Paper Scissor Game">
+            <html>
+                <head>
+                    <t t-call-assets="rock_paper_scissor.assets_playground"/>
+                </head>
+
+                <body>
+                </body>
+            </html>
+          </template>
+    </data>
+</odoo>

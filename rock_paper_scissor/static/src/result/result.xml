@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="rock_paper_scissor.result" owl="1">
+        <p>Result:  <t t-esc="winner"/> </p>
+        
+    </t>
+</templates>

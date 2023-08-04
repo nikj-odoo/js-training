@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+    <t t-name="rock_paper_scissor.player" owl="1">
+
+        <p>Player: <t t-esc="state.player"/>
+        </p>
+        <p>Computer: <t t-esc="state.computer"/>
+        </p>
+        <button id="btn1" class="btn btn-primary" t-on-click="playerChoice" value="rock"> Rock </button>
+        <button id="btn2" class="btn btn-primary" t-on-click="playerChoice" value="paper"> Paper </button>
+        <button id="btn3" class="btn btn-primary" t-on-click="playerChoice" value="scissor"> Scissor </button>
+        <!-- <Result playerData ="state.player" computerData ="state.computer"></Result> -->
+        <p>Result: <t t-esc="winner"/>
+        </p>
+
+    </t>
+</templates>    

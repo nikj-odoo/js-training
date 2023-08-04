@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<template xml:space="preserve">
+    <t t-name="owl_playground.Card" owl="1">
+        <div class="card" style="width: 18rem;">
+            <!-- <img src="/home/odoo/odoo/tutorials/owl_playground/static/src/card/nik.jpg" class="card-img-top" alt="image" /> -->
+            <div class="card-body">
+                <h5 class="card-title"><t t-slot="title"/></h5>
+                <p class="card-text"><t t-slot="default"/>
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+    </template>
