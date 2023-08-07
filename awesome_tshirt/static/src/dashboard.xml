@@ -14,6 +14,23 @@
                 </button>
             </t>
         </Layout>
+
+        <div class="h-100 o_awesome_tshirt_dashboard">
+            <div class="d-flex flex-wrap">
+                <!-- loop is iterating for each card (ex-2)-->
+                <t t-foreach="keytitle" t-as="key" t-key="key">
+                    <Card>
+                        <t t-set-slot = "title">
+                            <t t-esc="keytitle[key]"/>
+                        </t>
+                        <t t-esc="response[key]"/>
+                    </Card>
+                </t>
+            </div>
+            <Card>
+                <PieChart data="response['orders_by_size']" label="'TShirt by size'" onPieClick.bind="openSizeOrders"></PieChart>
+            </Card>
+        </div>
     </t>
 
 </templates>
